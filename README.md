@@ -1,4 +1,4 @@
-﻿<div align="center">
+<div align="center">
 
 # Google Places Business Search
 
@@ -27,28 +27,41 @@ A Python desktop application that searches for businesses across Istanbul distri
 
 ## Requirements
 
-`ash
+```bash
 pip install requests pandas
-`
+```
 
-> Tkinter is included with Python. On Linux: sudo apt-get install python3-tk
+> Tkinter is included with Python. On Linux: `sudo apt-get install python3-tk`
 
 ## Usage
 
-`ash
+```bash
 python google_places_arama.py
-`
+```
 
 1. Enter your Google Places API key
 2. Enter keywords (one per line)
 3. Enter districts (one per line)
-4. Set a maximum rating (e.g. 4.0)
+4. Set a maximum rating (e.g. `4.0`)
 5. Click **Start Search**
 
 Results appear in the table and are saved to a timestamped CSV file automatically.
 
-Get an API key at [Google Cloud Console](https://console.cloud.google.com/).
+## API Key
+
+Get a Google Places API key at [Google Cloud Console](https://console.cloud.google.com/). Copy `.env.example` to `.env` and paste your key there — never commit it directly in the code.
+
+## Project Structure
+
+```
+google-places-arama/
+├── google_places_arama.py   # Main application
+├── .env.example             # API key template
+├── .gitignore               # Excludes .env and CSV outputs
+├── requirements.txt
+└── README.md
+```
 
 ## License
 
-MIT
+[MIT](./LICENSE)
