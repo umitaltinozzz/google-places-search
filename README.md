@@ -31,6 +31,10 @@ Google Places Business Search is a Python desktop application built on top of th
 - Filters out high-rated businesses (noise reduction for outreach lists)
 - Handles UTF-8-SIG encoding so Turkish characters display correctly in Excel
 
+## Project Status
+
+Completed internal automation tool. The public repository is kept as a portfolio utility and reference implementation; running it requires your own Google Places API credentials.
+
 ## Features
 
 - **District-based search** — Queries run automatically for each selected Istanbul district
